@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightBlue"
+    tools:context=".LettersActivity">
+
+    <ImageButton
+        android:id="@+id/ButtonMusicOff"
+        android:layout_width="25dp"
+        android:layout_height="28dp"
+        android:background="@color/LightRed"
+        android:contentDescription="@string/ButtonBackDescription"
+        android:onClick="MusicOn"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageButton
+        android:id="@+id/ButtonMusicOn"
+        android:layout_width="25dp"
+        android:layout_height="28dp"
+        android:background="@color/LightRed"
+        android:contentDescription="@string/DescriptionMON"
+        android:onClick="MusicOff"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <TextView
+        android:id="@+id/textViewMusicOnOff"
+        android:layout_width="266dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="right"
+        android:text="@string/TextViewMusicOnOff"
+        android:textColor="@color/DarkYellow"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonMusicOff"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <Button
+        android:id="@+id/ButtonBackToMain"
+        android:layout_width="96dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/DarkYellow"
+        android:gravity="center"
+        android:onClick="BackToMain"
+        android:text="@string/ButtonBack"
+        android:textColor="@color/LightRed"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMusicOnOff"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="671dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonBackToMain">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewA"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterA"
+                    android:onClick="soundA"
+                    app:srcCompat="@drawable/a" />
+
+                <ImageView
+                    android:id="@+id/imageViewB"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterBE"
+                    android:onClick="soundBE"
+                    app:srcCompat="@drawable/b" />
+
+                <ImageView
+                    android:id="@+id/imageViewVE"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterVE"
+                    android:onClick="soundVE"
+                    app:srcCompat="@drawable/ve" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewGE"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterGE"
+                    android:onClick="soundGE"
+                    app:srcCompat="@drawable/ge" />
+
+                <ImageView
+                    android:id="@+id/imageViewDE"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterDE"
+                    android:onClick="soundDE"
+                    app:srcCompat="@drawable/de" />
+
+                <ImageView
+                    android:id="@+id/imageViewE"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterE"
+                    android:onClick="soundE"
+                    app:srcCompat="@drawable/e" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewYO"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterYO"
+                    android:onClick="soundYO"
+                    app:srcCompat="@drawable/yo" />
+
+                <ImageView
+                    android:id="@+id/imageViewJE"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterJE"
+                    android:onClick="soundJE"
+                    app:srcCompat="@drawable/je" />
+
+                <ImageView
+                    android:id="@+id/imageViewZE"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterZE"
+                    android:onClick="soundZE"
+                    app:srcCompat="@drawable/ze" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewI"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterI"
+                    android:onClick="soundI"
+                    app:srcCompat="@drawable/i" />
+
+                <ImageView
+                    android:id="@+id/imageViewIyo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundIyo"
+                    android:contentDescription="@string/LetterIyo"
+                    app:srcCompat="@drawable/iyo" />
+
+                <ImageView
+                    android:id="@+id/imageViewK"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundK"
+                    android:contentDescription="@string/LetterK"
+                    app:srcCompat="@drawable/k" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewL"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterL"
+                    android:onClick="soundL"
+                    app:srcCompat="@drawable/l" />
+
+                <ImageView
+                    android:id="@+id/imageViewM"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundM"
+                    android:contentDescription="@string/LetterM"
+                    app:srcCompat="@drawable/m" />
+
+                <ImageView
+                    android:id="@+id/imageViewN"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundN"
+                    android:contentDescription="@string/LetterN"
+                    app:srcCompat="@drawable/n" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewO"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterO"
+                    android:onClick="soundO"
+                    app:srcCompat="@drawable/o" />
+
+                <ImageView
+                    android:id="@+id/imageViewP"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundP"
+                    android:contentDescription="@string/LetterP"
+                    app:srcCompat="@drawable/p" />
+
+                <ImageView
+                    android:id="@+id/imageViewR"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundR"
+                    android:contentDescription="@string/LetterR"
+                    app:srcCompat="@drawable/r" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewS"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterI"
+                    android:onClick="soundS"
+                    app:srcCompat="@drawable/s" />
+
+                <ImageView
+                    android:id="@+id/imageViewT"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundT"
+                    android:contentDescription="@string/LetterIyo"
+                    app:srcCompat="@drawable/t" />
+
+                <ImageView
+                    android:id="@+id/imageViewU"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundU"
+                    android:contentDescription="@string/LetterU"
+                    app:srcCompat="@drawable/u" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewF"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterF"
+                    android:onClick="soundF"
+                    app:srcCompat="@drawable/f" />
+
+                <ImageView
+                    android:id="@+id/imageViewH"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundH"
+                    android:contentDescription="@string/LetterH"
+                    app:srcCompat="@drawable/h" />
+
+                <ImageView
+                    android:id="@+id/imageViewCE"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundCE"
+                    android:contentDescription="@string/LetterCE"
+                    app:srcCompat="@drawable/ce" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewCH"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterCH"
+                    android:onClick="soundCH"
+                    app:srcCompat="@drawable/ch" />
+
+                <ImageView
+                    android:id="@+id/imageViewSH"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundSH"
+                    android:contentDescription="@string/LetterSH"
+                    app:srcCompat="@drawable/sh" />
+
+                <ImageView
+                    android:id="@+id/imageViewSHE"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundSHE"
+                    android:contentDescription="@string/LetterSHE"
+                    app:srcCompat="@drawable/she" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewSolid"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterSolid"
+                    android:onClick="soundSolid"
+                    app:srcCompat="@drawable/solid" />
+
+                <ImageView
+                    android:id="@+id/imageViewIii"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundIii"
+                    android:contentDescription="@string/LetterIii"
+                    app:srcCompat="@drawable/iii" />
+
+                <ImageView
+                    android:id="@+id/imageViewSoft"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundSoft"
+                    android:contentDescription="@string/LetterSoft"
+                    app:srcCompat="@drawable/soft" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="25dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewEa"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:contentDescription="@string/LetterEa"
+                    android:onClick="soundEa"
+                    app:srcCompat="@drawable/ee" />
+
+                <ImageView
+                    android:id="@+id/imageViewYu"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundYu"
+                    android:contentDescription="@string/LetterYu"
+                    app:srcCompat="@drawable/yu" />
+
+                <ImageView
+                    android:id="@+id/imageViewYa"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="18dp"
+                    android:onClick="soundYa"
+                    android:contentDescription="@string/LetterYa"
+                    app:srcCompat="@drawable/ya" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

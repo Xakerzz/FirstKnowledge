@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrivatePolicy">
+
+    <Button
+        android:id="@+id/ButtonBackToMain"
+        android:layout_width="111dp"
+        android:layout_height="29dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/Grey"
+        android:gravity="center"
+        android:onClick="BackToMain"
+        android:text="@string/ButtonBack"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <ScrollView
+        android:layout_width="779dp"
+        android:layout_height="1171dp"
+        android:layout_margin="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewPolicy1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPolicy2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingBottom="10dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy2" />
+
+            <TextView
+                android:id="@+id/textViewPolicy3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPolicy4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingBottom="10dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy4" />
+
+            <TextView
+                android:id="@+id/textViewPolicy5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy5"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPolicy6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingBottom="10dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy6" />
+
+            <TextView
+                android:id="@+id/textViewPolicy7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy7"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPolicy8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingBottom="10dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy8" />
+
+            <TextView
+                android:id="@+id/textViewPolicy9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy9"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPolicy10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingBottom="10dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy10" />
+
+            <TextView
+                android:id="@+id/textViewPolicy11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy11"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPolicy12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingBottom="10dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy12" />
+
+            <TextView
+                android:id="@+id/textViewPolicy13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy13"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPolicy14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingBottom="10dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy14" />
+
+            <TextView
+                android:id="@+id/textViewPolicy15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy15"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPolicy16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingBottom="10dp"
+                android:textSize="18sp"
+                android:text="@string/PrivatePolicy16" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

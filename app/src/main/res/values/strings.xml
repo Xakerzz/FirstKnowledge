@@ -1,0 +1,105 @@
+<resources>
+
+    <string name="app_name">First Knowledge</string>
+    <string name="TextVievLogo2">First Knowledge</string>
+    <string name="ButtonNumbs">Цифры</string>
+    <string name="ButtonLetters">Буквы</string>
+    <string name="TextViewMusicOnOff">Музыка Вкл.\\Выкл.</string>
+    <string name="fkLogoDescription">Логотип приложения FK</string>
+    <string name="ButtonOnDescription">Кнопка с галочкой - музыка включена</string>
+    <string name="ButtonOffDescription">Кнопка без галки - музыка выключена</string>
+    <string name="DescriptionMON">кнопка выключения музыки</string>
+    <string name="DescriptionMOFF">кнопка включения музыки</string>
+    <string name="ButtonBackDescription">Кнопка возврата в главное меню</string>
+    <string name="ButtonBack">Назад</string>
+    <string name="Numb9">Число 9</string>
+    <string name="Numb8">Число 8</string>
+    <string name="Numb7">Число 7</string>
+    <string name="Numb6">Число 6</string>
+    <string name="Numb5">Число 5</string>
+    <string name="Numb4">Число 4</string>
+    <string name="Numb3">Число 3</string>
+    <string name="Numb2">Число 2</string>
+    <string name="Numb1">Число 1</string>
+    <string name="Numb0">Число 0</string>
+    <string name="LetterA">Буква А</string>
+    <string name="LetterBE">Буква Б</string>
+    <string name="LetterVE">Буква В</string>
+    <string name="LetterGE">Буква Г</string>
+    <string name="LetterDE">Буква Д</string>
+    <string name="LetterE">Буква Е</string>
+    <string name="LetterYO">Буква Ё</string>
+    <string name="LetterJE">Буква Ж</string>
+    <string name="LetterZE">Буква З</string>
+    <string name="LetterI">Буква И</string>
+    <string name="LetterIyo">Буква Й</string>
+    <string name="LetterK">Буква К</string>
+    <string name="LetterL">Буква Л</string>
+    <string name="LetterM">Буква М</string>
+    <string name="LetterN">Буква Н</string>
+    <string name="LetterO">Буква О</string>
+    <string name="LetterP">Буква П</string>
+    <string name="LetterR">Буква Р</string>
+    <string name="LetterS">Буква С</string>
+    <string name="LetterT">Буква Т</string>
+    <string name="LetterU">Буква У</string>
+    <string name="LetterF">Буква Ф</string>
+    <string name="LetterH">Буква Х</string>
+    <string name="LetterCE">Буква Ц</string>
+    <string name="LetterCH">Буква Ч</string>
+    <string name="LetterSH">Буква Ш</string>
+    <string name="LetterSHE">Буква Щ</string>
+    <string name="LetterSolid">Буква Твердый знак</string>
+    <string name="LetterIii">Буква Ы</string>
+    <string name="LetterSoft">Буква Мягкий знак</string>
+    <string name="LetterEa">Буква Э</string>
+    <string name="LetterYu">Буква Ю</string>
+    <string name="LetterYa">Буква Я</string>
+    <string name="PrivatePolicy">Политика конфиденциальности</string>
+    <string name="PrivatePolicy1">политика конфиденциальности </string>
+
+    <string name="PrivatePolicy2">Я Пантюхов Роман, создал приложение FirstKnowledge как абсолютно бесплатное.
+        Эта УСЛУГА предоставляется Пантюховым Романом бесплатно и для использования как есть.
+        Если вы решите использовать моё приложение, то вы соглашаетесь с этой политикой конфиденциальности. Это приложение не собирает, не использует,
+        не хранит никакую Вашу Личную информацию и не передаёт её кому-либо.</string>
+
+    <string name="PrivatePolicy3"> Сбор и использование информации </string>
+
+    <string name="PrivatePolicy4"> При использовании моего приложения я не буду требовать от вас какую-либо Личную информацию.
+        Приложение не использует сторонние сервисы, которые собирают информацию, используемую для вашей идентификации. </string>
+
+    <string name="PrivatePolicy5">Данные журнала</string>
+
+
+    <string name="PrivatePolicy6">Я хочу сообщить вам, что когда вы используете приложение, в случае ошибки в приложении я не собираю данные и информацию (через сторонние продукты) на вашем телефоне,
+        называемые данные журнала.</string>
+
+    <string name="PrivatePolicy7">Безопасность </string>
+
+    <string name="PrivatePolicy8"> Я ценю вашу личную информацию, поэтому это приложение не собирает, не обрабатывает , никак не обрабатывает и не хранит никакой Вашей Личной информации и не предаёт её кому-либо.</string>
+
+    <string name="PrivatePolicy9"> Ссылки на другие сайты</string>
+
+    <string name="PrivatePolicy10">Это приложение не содержит ссылки на другие сайты.</string>
+
+    <string name="PrivatePolicy11">Конфиденциальность детей</string>
+
+    <string name="PrivatePolicy12">Это приложение предназначено для использования лицами младше 13 лет исключительно в образовательных целях.
+        Я сознательно не собираю личную информацию от лиц младше 13 лет.</string>
+
+    <string name="PrivatePolicy13"> Изменения в настоящей Политике конфиденциальности</string>
+
+    <string name="PrivatePolicy14"> Я могу время от времени обновлять нашу Политику конфиденциальности.
+        Таким образом вам рекомендуется периодически просматривать эту страницу на предмет изменений.
+        Я уведомим вас о любых изменениях, разместив новую Политику конфиденциальности на этой странице.
+        Эта политика конфиденциальности действует с 05.11.2020</string>
+
+    <string name="PrivatePolicy15">Связь с нами</string>
+
+    <string name="PrivatePolicy16">Если у вас есть какие-либо вопросы или предложения относительно моей Политики конфиденциальности,
+        не стесняйтесь ко мне по адресу Pantiukov.R@gmail.com.</string>
+    <string name="logopreview">LogoPreview</string>
+    <string name="firstTextView">First</string>
+    <string name="firstPreviewText">First</string>
+    <string name="knowledgePreviewText">Knowledge</string>
+</resources>

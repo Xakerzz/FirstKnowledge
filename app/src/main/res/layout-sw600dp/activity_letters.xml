@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightBlue"
+    tools:context=".LettersActivity">
+
+    <ImageButton
+        android:id="@+id/ButtonMusicOff"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        android:background="@color/LightRed"
+        android:contentDescription="@string/DescriptionMOFF"
+        android:onClick="MusicOn"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageButton
+        android:id="@+id/ButtonMusicOn"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        android:background="@color/LightRed"
+        android:contentDescription="@string/DescriptionMON"
+        android:onClick="MusicOff"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <TextView
+        android:id="@+id/textViewMusicOnOff"
+        android:layout_width="330dp"
+        android:layout_height="63dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="@string/TextViewMusicOnOff"
+        android:textColor="@color/DarkYellow"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <Button
+        android:id="@+id/ButtonBackToMain"
+        android:layout_width="184dp"
+        android:layout_height="83dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/DarkYellow"
+        android:gravity="center"
+        android:onClick="BackToMain"
+        android:text="@string/ButtonBack"
+        android:textColor="@color/LightRed"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMusicOnOff"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <ScrollView
+        android:layout_width="798dp"
+        android:layout_height="1159dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonBackToMain">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewA"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterA"
+                    android:onClick="soundA"
+                    app:srcCompat="@drawable/a" />
+
+                <ImageView
+                    android:id="@+id/imageViewB"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterBE"
+                    android:onClick="soundBE"
+                    app:srcCompat="@drawable/b" />
+
+                <ImageView
+                    android:id="@+id/imageViewVE"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterVE"
+                    android:onClick="soundVE"
+                    app:srcCompat="@drawable/ve" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewGE"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterGE"
+                    android:onClick="soundGE"
+                    app:srcCompat="@drawable/ge" />
+
+                <ImageView
+                    android:id="@+id/imageViewDE"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterDE"
+                    android:onClick="soundDE"
+                    app:srcCompat="@drawable/de" />
+
+                <ImageView
+                    android:id="@+id/imageViewE"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterE"
+                    android:onClick="soundE"
+                    app:srcCompat="@drawable/e" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewYO"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterYO"
+                    android:onClick="soundYO"
+                    app:srcCompat="@drawable/yo" />
+
+                <ImageView
+                    android:id="@+id/imageViewJE"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterJE"
+                    android:onClick="soundJE"
+                    app:srcCompat="@drawable/je" />
+
+                <ImageView
+                    android:id="@+id/imageViewZE"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterZE"
+                    android:onClick="soundZE"
+                    app:srcCompat="@drawable/ze" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewI"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterI"
+                    android:onClick="soundI"
+                    app:srcCompat="@drawable/i" />
+
+                <ImageView
+                    android:id="@+id/imageViewIyo"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterIyo"
+                    android:onClick="soundIyo"
+                    app:srcCompat="@drawable/iyo" />
+
+                <ImageView
+                    android:id="@+id/imageViewK"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterK"
+                    android:onClick="soundK"
+                    app:srcCompat="@drawable/k" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewL"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterL"
+                    android:onClick="soundL"
+                    app:srcCompat="@drawable/l" />
+
+                <ImageView
+                    android:id="@+id/imageViewM"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterM"
+                    android:onClick="soundM"
+                    app:srcCompat="@drawable/m" />
+
+                <ImageView
+                    android:id="@+id/imageViewN"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterN"
+                    android:onClick="soundN"
+                    app:srcCompat="@drawable/n" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewO"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterO"
+                    android:onClick="soundO"
+                    app:srcCompat="@drawable/o" />
+
+                <ImageView
+                    android:id="@+id/imageViewP"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterP"
+                    android:onClick="soundP"
+                    app:srcCompat="@drawable/p" />
+
+                <ImageView
+                    android:id="@+id/imageViewR"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterR"
+                    android:onClick="soundR"
+                    app:srcCompat="@drawable/r" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewS"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterI"
+                    android:onClick="soundS"
+                    app:srcCompat="@drawable/s" />
+
+                <ImageView
+                    android:id="@+id/imageViewT"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterIyo"
+                    android:onClick="soundT"
+                    app:srcCompat="@drawable/t" />
+
+                <ImageView
+                    android:id="@+id/imageViewU"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterU"
+                    android:onClick="soundU"
+                    app:srcCompat="@drawable/u" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewF"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterF"
+                    android:onClick="soundF"
+                    app:srcCompat="@drawable/f" />
+
+                <ImageView
+                    android:id="@+id/imageViewH"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterH"
+                    android:onClick="soundH"
+                    app:srcCompat="@drawable/h" />
+
+                <ImageView
+                    android:id="@+id/imageViewCE"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterCE"
+                    android:onClick="soundCE"
+                    app:srcCompat="@drawable/ce" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewCH"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterCH"
+                    android:onClick="soundCH"
+                    app:srcCompat="@drawable/ch" />
+
+                <ImageView
+                    android:id="@+id/imageViewSH"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterSH"
+                    android:onClick="soundSH"
+                    app:srcCompat="@drawable/sh" />
+
+                <ImageView
+                    android:id="@+id/imageViewSHE"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterSHE"
+                    android:onClick="soundSHE"
+                    app:srcCompat="@drawable/she" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewSolid"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterSolid"
+                    android:onClick="soundSolid"
+                    app:srcCompat="@drawable/solid" />
+
+                <ImageView
+                    android:id="@+id/imageViewIii"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterIii"
+                    android:onClick="soundIii"
+                    app:srcCompat="@drawable/iii" />
+
+                <ImageView
+                    android:id="@+id/imageViewSoft"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterSoft"
+                    android:onClick="soundSoft"
+                    app:srcCompat="@drawable/soft" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewEa"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterEa"
+                    android:onClick="soundEa"
+                    app:srcCompat="@drawable/ee" />
+
+                <ImageView
+                    android:id="@+id/imageViewYu"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterYu"
+                    android:onClick="soundYu"
+                    app:srcCompat="@drawable/yu" />
+
+                <ImageView
+                    android:id="@+id/imageViewYa"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="32dp"
+                    android:contentDescription="@string/LetterYa"
+                    android:onClick="soundYa"
+                    app:srcCompat="@drawable/ya" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
